@@ -1,15 +1,16 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 2.5em;
   background-color: #f4f4f9;
 }
 
 .container {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 60em;
+  min-width: 20em;
+  margin: 5rex auto;
   text-align: center;
-  padding: 20px;
+  padding: 2em;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -31,7 +32,14 @@ input {
   border-radius: 4px;
 }
 
-button {
+select{
+  border: none;
+}
+select option {
+  background-color: white;
+}
+
+/* button {
   padding: 10px 20px;
   background-color: #5c67f2;
   color: white;
@@ -42,7 +50,7 @@ button {
 
 button:hover {
   background-color: #4a54c9;
-}
+} */
 
 #results {
   text-align: left;
@@ -56,4 +64,19 @@ button:hover {
 
 .book:last-child {
   border-bottom: none;
+}
+
+#pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+#pagination a:hover {
+  text-decoration: underline;
+}
+
+h3{
+  @apply ;
 }
