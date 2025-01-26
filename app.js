@@ -50,7 +50,7 @@ function displayResults(books) {
   books.forEach((book) => {
     const bookElement = document.createElement("div");
     bookElement.classList.add("book");
-    bookElement.innerHTML = `<h3>${book.title}</h3> <p><strong>Autor:</strong> ${book.author_name ? book.author_name.join(", ") : "Desconocido"}</p> <p><strong>Año:</strong> ${book.first_publish_year || "Desconocido"}</p>`;
+    bookElement.innerHTML = `<h3>${book.title}</h3> <p id='author'><strong>Autor:</strong> ${book.author_name ? book.author_name.join(", ") : "Desconocido"}</p> <p><strong>Año:</strong> ${book.first_publish_year || "Desconocido"}</p>`;
     resultsDiv.appendChild(bookElement);
   });
 }

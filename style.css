@@ -55,11 +55,20 @@ button:hover {
 #results {
   text-align: left;
   margin-top: 20px;
+
 }
 
 .book {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+  margin: 0 1em;
+  width: 50%;
+}
+
+.book #author{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .book:last-child {
@@ -78,5 +87,5 @@ button:hover {
 }
 
 h3{
-  @apply ;
+  font-size: 1.5em;
 }
